@@ -1,0 +1,322 @@
+@charset "utf-8";
+
+@import url( http://fonts.googleapis.com/earlyaccess/notosanskr.css); /*노토산스*/
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');/*나눔스퀘어*/
+@font-face {
+    font-family: 'HSSummer';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSSummer.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    line-height: 1;
+    color: #333;
+    font-family: 'Noto Sans KR';
+    font-weight: 400; /*위에 폰트 가져온거*/
+}
+
+header {
+    position: fixed;
+   width: 100%;
+   background-color: #fff;
+   z-index: 1;
+    
+}
+header > div {
+    width: calc(100% - 160px);
+    height: 100px;
+    margin: 0 auto;
+    display: flex; 
+    background: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    width: 84px;
+}
+header h1 a {}
+header h1 a img {}
+
+header nav {}
+header nav ul {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 40px;
+} 
+header nav ul li {
+    padding: 37px;
+}
+
+
+header .right_menu {
+    display: flex;
+    align-items: center;
+}
+header .right_menu li {
+    margin-left: 25px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+header .right_menu li a {}
+
+.main_visual {
+    
+    margin: 0 auto;
+    height: 757px;
+}
+.main_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cont01 {
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg');
+    background-size: cover;
+
+}
+.cont01 .bb {
+    width: 1280px;
+    margin: 0 auto;
+}
+.cont01 .title {
+    margin-bottom: 30px;
+    padding-top: 200px;
+     
+}
+.cont01 .title h3 {
+    font-size: 28px;
+    font-family: 'NanumSquare';
+    font-weight: 800; 
+    flex-wrap: wrap;
+    padding: 30px auto;
+    
+}
+
+.cont01 .list {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+
+}
+.cont01 .list .item {
+    margin-bottom: 180px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.575);
+}
+.cont01 .list .item img {
+  width: 408px;
+  height: 490px;
+  
+}
+.cont01 .list .item div {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.568);
+    color: #fff;
+    padding: 30px;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    bottom: -100%; 
+    transition: 0.5s; /*올라올때 부드럽게 주는 시간차*/
+}
+.cont01 .list .item div strong {
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.cont01 .list .item:hover div {
+    bottom: 0; 
+    transition: 0.5s;
+}
+
+.cont02 {
+    width: 1110px;
+    margin: 100px auto 199px;
+}
+.cont02 .na {
+    
+    font-size: 28px;
+    font-family: 'NanumSquare';
+    font-weight: 800; 
+    flex-wrap: wrap;
+    padding: 30px auto;
+}
+.cont02 .na .youtube_att {
+    width: 1100px;
+    margin: 30px auto;
+}
+.cont02 .na .youtube_att .youtube {
+    width: 100%;
+    padding-bottom:56.25%;/*꼭있어야됨*/
+    position: relative; /*꼭있어야됨*/
+}
+.cont02 .na .youtube_att .youtube iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;  /*relative를 찾아서 그 위치로 이동시기는 것 top,.right left 한반향식 설정해야된다. */
+    top: 0;
+    left: 0;
+}
+/* 후기 */
+.cont03 { 
+    width: 100%;
+    height: 678px;
+    background-color: #eeeeee;
+    margin-bottom: 200px;
+}
+.cont03 .people {
+    margin:0 auto;
+    width: 100%;
+    height: 333px; 
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.cont03 .people2 {
+    margin:0 auto;
+    width: 100%;
+    height: 730px; 
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.cont03 .people .hugi {
+    width: 470px;
+    height: 190px;
+    border-radius: 40px;
+    margin: 128px 15px 240px;
+    font-size: 16px;
+    color: black;
+    line-height: 20px;
+    text-align: center;
+    background: #fff; 
+    margin-top: 128px;
+    box-shadow: 3px 20px 25px rgb(0 0 0 / 57%);
+    
+}
+.cont03 .people2 .hugi {
+    width: 470px;
+    height: 190px;
+    border-radius: 40px;
+    margin: 128px 15px 240px;
+    font-size: 16px;
+    color: black;
+    line-height: 20px;
+    text-align: center;
+    background: #fff; 
+    margin-top: 17px;
+    box-shadow: 3px 20px 25px rgb(0 0 0 / 57%);
+  
+    
+}
+.cont03 .people .hugi img {
+    width: 128px;
+    height: 128px; 
+    margin-right: 265px;
+    margin-top: 27px;
+    
+    
+    
+}
+.cont03 .people2 .hugi img {
+    width: 128px;
+    height: 128px; 
+    margin-right: 265px;
+    margin-top: 27px;
+}
+.cont03 .people .hugi p {
+    margin-left: 123px;
+    margin-top: -96px;
+    font-family: 'Noto Sans KR';
+    font-weight: 700;
+}
+.cont03 .people2 .hugi p {
+    margin-left: 123px;
+    margin-top: -106px;
+    font-family: 'Noto Sans KR';
+    font-weight: 700;
+}
+
+.cont03 .people .hugi span {
+    margin-left: 123px;
+    margin-top: -96px;
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+}
+.cont03 .people2 .hugi span {
+    margin-left: 123px;
+    margin-top: -106px; 
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+}
+/* 지도  */
+.google_map {
+    
+    margin-bottom: 30px;
+   
+}
+.google_map .font01 {
+
+}
+.google_map .font01 div {
+    margin: 0 auto;
+    text-align: center;
+}
+.google_map .font01 h4 {
+    font-size: 50px;
+    font-family:'HSSummer';
+    font-weight: 800; 
+    flex-wrap: wrap;
+    margin: 30px 8px;
+    color: #00274f;
+}
+.google_map .font01 p {
+    font-size: 18px;
+    font-family: 'NanumSquare';
+    font-weight: 400; 
+    flex-wrap: wrap;
+    padding: 30px auto;
+    margin-bottom: 20px;
+}
+.google_map iframe {
+    width: 100%;
+    height: 702px;
+}
+
+footer {
+    background-color: rgb(73, 72, 72);
+    padding: 45px 0;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.589);
+    text-align: center;
+}
