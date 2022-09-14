@@ -6,18 +6,304 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>최유리 포트폴리오</title>
+    
+    <!-- link Swiper  -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- fancybox css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/font.css" rel="stylesheet" />
+    
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!--fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+        $(function(){
+            //영상편집 슬라이드
+            var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+                },
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
+
+            //영상편집 탭메뉴
+            $('.motion_menu ul li').click(function(){
+                $('.motion_menu ul li').removeClass('on');
+                $(this).addClass('on');/* 작성 순서 중요 요렇게 작성해야함 안그러면 그냥 사라짐 */
+
+                $('.mySwiper').removeClass('on');
+                $('.mySwiper').eq($(this).index()).addClass('on');
+            });
+        });//jquery end
+    </script>
+
+   
 </head>
 <body>
+    <header>
+        <div class="inner">
+            <h1>
+                <a href="#">cheoyuri</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">영상편집</a></li>
+                    <li><a href="#">웹디자인/웹퍼블리싱</a></li>
+                    <li><a href="#">2D디자인</a></li>
+                    <li><a href="#">나의소개</a></li>
+                </ul>
+            </nav> 
+        </div><!-- inner end -->
+    </header>
+    <section class="main_visual">
+        <!-- 이미지 영상비디오 배경 컬러 넣을수 있음 -->
+        <img src="img/cont03_1.jpg" alt="" />
+        <div class="inner">
+            <p>motion graphic deisnger</p>
+            <h2>cheo yu ri <br/></be>Deisnger</h2>
+        </div><!-- inner end -->
+    </section><!-- main_visual end -->
+    <section class="cont01">
+        <div class="inner">
+            <div class="title">
+                <h3>영상편집</h3>
+                <p>프리미어프로, 에프터이펙트 들을 사용하여 모션그레픽을 제작하였습니다.</p>
+            </div><!-- title end -->
+            <div class="motion_menu">
+                <ul>
+                    <li class="on">게임</li>
+                    <li>홍보영상</li>
+                    <li>인포그레픽</li>
+                    <li>브이로그</li>
+                    <li>뮤비티저</li>
+                </ul>
+            </div><!-- motion_menu end -->
+            
+            <!-- swiper slide -->
+            <!-- motion_menu 1 게임-->
+            <div class="swiper mySwiper on">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="item">
+                        <!-- 유튜브 -->
+                        <div class="pc_youtube">
+                            <img src="img/pc_img.png" alt=" pc 모니터" />
+                            <div class="youtube">
+                                <div>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1Z4dNxs-9tU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div><!-- youtube end  -->
+                        </div><!-- pc_youtube end -->
+
+                        <div class="info">
+                            <strong>촬영, 출연, 디자인, 특수효과</strong>
+                            <h4>영상제목작성하는곳</h4>
+                            <p>컨셉 및 제작목적 속에 품고 광야에서 든 없으면, 이것이다. 못하다 피는 미묘한 어디 바이며, 것이다. 오직 풀이 긴지라 교향악이다. 인간이 이 인간에 칼이다. 내는 지혜는 인류의 생의 것이 든 같은 목숨을 하였으며, 그리하였는가? 얼마나 반짝이는 이는 수 인생을 것이다.</p>
+                            <ul class="text">
+                                <li><strong>프로그램</strong> : 프리미어프로, 에프터이펙트, 포토샵, 일러스트레이터</li>
+                                <li><strong>프로그램</strong> : 2022.09</li>
+                            </ul><!-- text end -->
+                            <ul class="btn">
+                                <li><a href="#">영상원본보기</a></li>
+                                <li><a href="#">기획서보기</a></li>
+                            </ul>
+                        </div> <!-- info end -->
+
+                    </div><!-- item end -->
+                  </div><!-- 1 -->
+                  <div class="swiper-slide">
+                    <div class="item">
+                        <!-- 유튜브 -->
+                        <div class="pc_youtube">
+                            <img src="img/pc_img.png" alt=" pc 모니터" />
+                            <div class="youtube">
+                                <div>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1Z4dNxs-9tU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div><!-- youtube end  -->
+                        </div><!-- pc_youtube end -->
+
+                        <div class="info">
+                            <strong>촬영, 출연, 디자인, 특수효과</strong>
+                            <h4>영상제목작성하는곳</h4>
+                            <p>컨셉 및 제작목적 속에 품고 광야에서 든 없으면, 이것이다. 못하다 피는 미묘한 어디 바이며, 것이다. 오직 풀이 긴지라 교향악이다. 인간이 이 인간에 칼이다. 내는 지혜는 인류의 생의 것이 든 같은 목숨을 하였으며, 그리하였는가? 얼마나 반짝이는 이는 수 인생을 것이다.</p>
+                            <ul class="text">
+                                <li><strong>프로그램</strong> : 프리미어프로, 에프터이펙트, 포토샵, 일러스트레이터</li>
+                                <li><strong>프로그램</strong> : 2022.09</li>
+                            </ul><!-- text end -->
+                            <ul class="btn">
+                                <li><a href="#">영상원본보기</a></li>
+                                <li><a href="#">기획서보기</a></li>
+                            </ul>
+                        </div> <!-- info end -->
+
+                    </div><!-- item end -->
+                  </div><!-- 2 -->
+                  
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div><!-- swiper end 1 -->
+
+              <!-- motion_menu 2 홍보영상-->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="item">
+                        <!-- 유튜브 -->
+                        <div class="pc_youtube">
+                            <img src="img/pc_img.png" alt=" pc 모니터" />
+                            <div class="youtube">
+                                <div>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1Z4dNxs-9tU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div><!-- youtube end  -->
+                        </div><!-- pc_youtube end -->
+
+                        <div class="info">
+                            <strong>촬영, 출연, 디자인, 특수효과</strong>
+                            <h4>영상제목작성하는곳</h4>
+                            <p>컨셉 및 제작목적 속에 품고 광야에서 든 없으면, 이것이다. 못하다 피는 미묘한 어디 바이며, 것이다. 오직 풀이 긴지라 교향악이다. 인간이 이 인간에 칼이다. 내는 지혜는 인류의 생의 것이 든 같은 목숨을 하였으며, 그리하였는가? 얼마나 반짝이는 이는 수 인생을 것이다.</p>
+                            <ul class="text">
+                                <li><strong>프로그램</strong> : 프리미어프로, 에프터이펙트, 포토샵, 일러스트레이터</li>
+                                <li><strong>프로그램</strong> : 2022.09</li>
+                            </ul><!-- text end -->
+                            <ul class="btn">
+                                <li><a href="#">영상원본보기</a></li>
+                                <li><a href="#">기획서보기</a></li>
+                            </ul>
+                        </div> <!-- info end -->
+
+                    </div><!-- item end -->
+                  </div><!-- 1 -->
+                  <div class="swiper-slide">
+                    <div class="item">
+                        <!-- 유튜브 -->
+                        <div class="pc_youtube">
+                            <img src="img/pc_img.png" alt=" pc 모니터" />
+                            <div class="youtube">
+                                <div>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1Z4dNxs-9tU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div><!-- youtube end  -->
+                        </div><!-- pc_youtube end -->
+
+                        <div class="info">
+                            <strong>촬영, 출연, 디자인, 특수효과</strong>
+                            <h4>영상제목작성하는곳</h4>
+                            <p>컨셉 및 제작목적 속에 품고 광야에서 든 없으면, 이것이다. 못하다 피는 미묘한 어디 바이며, 것이다. 오직 풀이 긴지라 교향악이다. 인간이 이 인간에 칼이다. 내는 지혜는 인류의 생의 것이 든 같은 목숨을 하였으며, 그리하였는가? 얼마나 반짝이는 이는 수 인생을 것이다.</p>
+                            <ul class="text">
+                                <li><strong>프로그램</strong> : 프리미어프로, 에프터이펙트, 포토샵, 일러스트레이터</li>
+                                <li><strong>프로그램</strong> : 2022.09</li>
+                            </ul><!-- text end -->
+                            <ul class="btn">
+                                <li><a href="#">영상원본보기</a></li>
+                                <li><a href="#">기획서보기</a></li>
+                            </ul>
+                        </div> <!-- info end -->
+
+                    </div><!-- item end -->
+                  </div><!-- 2 -->
+                  
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div><!-- swiper end 2 -->
+
+              <!-- motion_menu 3 인포그래픽-->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="item">
+                        <!-- 유튜브 -->
+                        <div class="pc_youtube">
+                            <img src="img/pc_img.png" alt=" pc 모니터" />
+                            <div class="youtube">
+                                <div>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1Z4dNxs-9tU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div><!-- youtube end  -->
+                        </div><!-- pc_youtube end -->
+
+                        <div class="info">
+                            <strong>촬영, 출연, 디자인, 특수효과</strong>
+                            <h4>영상제목작성하는곳</h4>
+                            <p>컨셉 및 제작목적 속에 품고 광야에서 든 없으면, 이것이다. 못하다 피는 미묘한 어디 바이며, 것이다. 오직 풀이 긴지라 교향악이다. 인간이 이 인간에 칼이다. 내는 지혜는 인류의 생의 것이 든 같은 목숨을 하였으며, 그리하였는가? 얼마나 반짝이는 이는 수 인생을 것이다.</p>
+                            <ul class="text">
+                                <li><strong>프로그램</strong> : 프리미어프로, 에프터이펙트, 포토샵, 일러스트레이터</li>
+                                <li><strong>프로그램</strong> : 2022.09</li>
+                            </ul><!-- text end -->
+                            <ul class="btn">
+                                <li><a href="#">영상원본보기</a></li>
+                                <li><a href="#">기획서보기</a></li>
+                            </ul>
+                        </div> <!-- info end -->
+
+                    </div><!-- item end -->
+                  </div><!-- 1 -->
+                  <div class="swiper-slide">
+                    <div class="item">
+                        <!-- 유튜브 -->
+                        <div class="pc_youtube">
+                            <img src="img/pc_img.png" alt=" pc 모니터" />
+                            <div class="youtube">
+                                <div>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1Z4dNxs-9tU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div><!-- youtube end  -->
+                        </div><!-- pc_youtube end -->
+
+                        <div class="info">
+                            <strong>촬영, 출연, 디자인, 특수효과</strong>
+                            <h4>영상제목작성하는곳</h4>
+                            <p>컨셉 및 제작목적 속에 품고 광야에서 든 없으면, 이것이다. 못하다 피는 미묘한 어디 바이며, 것이다. 오직 풀이 긴지라 교향악이다. 인간이 이 인간에 칼이다. 내는 지혜는 인류의 생의 것이 든 같은 목숨을 하였으며, 그리하였는가? 얼마나 반짝이는 이는 수 인생을 것이다.</p>
+                            <ul class="text">
+                                <li><strong>프로그램</strong> : 프리미어프로, 에프터이펙트, 포토샵, 일러스트레이터</li>
+                                <li><strong>프로그램</strong> : 2022.09</li>
+                            </ul><!-- text end -->
+                            <ul class="btn">
+                                <li><a href="#">영상원본보기</a></li>
+                                <li><a href="#">기획서보기</a></li>
+                            </ul>
+                        </div> <!-- info end -->
+
+                    </div><!-- item end -->
+                  </div><!-- 2 -->
+                  
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div><!-- swiper end 3 -->
+
+
+
+        </div><!-- inner end -->
+    </section><!-- cont01 end -->
+
     <section class="cont03">
-        <div class="title">
+        <div class="title inner">
             <h3>웹디자인</h3>
             <p>접근성 호환성을 고려한 웹사이트 리뉴얼</p>
         </div> <!-- title end -->
 
-        <div class="list">
+        <div class="list inner">
             <div class="item"><!-- 1 -->
                 <img src="img/art-01.gif" alt="창조의아침 " />
                 <div class="info">
@@ -37,18 +323,18 @@
             </div> <!-- item end 1 -->
 
             <div class="item"><!-- 2 -->
-                <img src="img/cont03_2.jpg" alt="웹사이트 이름 " />
+                <img src="sub/web2/img/main04.jpg" alt="웹사이트 이름 " />
                 <div class="info">
-                    <h4>이름 웹사이트 리뉴얼</h4>
+                    <h4>무민랜드 제주 웹사이트 리뉴얼</h4>
                     <p>이름 웝사이트 리뉴얼을 위해 기획, 디자인, HTML,CSS언어를 활용하여 웹사이트를 구연하였습니다.</p>
                      <ul class="text">
                         <li><strong>프로그렘</strong> : 포토샵, 일러스트, Vsode</li>
                         <li><strong>사용언어</strong> : html, css</li>
-                        <li><strong>제작일자</strong> : 2022.08</li>
+                        <li><strong>제작일자</strong> : 2022.09</li>
                      </ul><!-- text end  -->
                      <ul class="btn">
-                        <li><a href="#">기획서및작업과정</a></li>
-                        <li><a href="#">사이트보기</a></li>
+                        <li><a href="sub/web2/desgin/dessgin01.jpg" target="_blank">기획서및작업과정</a></li>
+                        <li><a href="sub/web2/moomin.html" target="_blank">사이트보기</a></li>
                     </ul><!-- .btn end -->
 
                 </div><!-- info end -->
@@ -57,5 +343,171 @@
 
         </div><!-- list end -->
     </section><!--cont03 end  -->
+
+    <section class="cont04">
+        <div class="inner">
+            <div class="title">
+                <h3>그래픽디자인</h3>
+                <p>2D, 3D그래픽을 포토샵, 일러스트레이터를 이용하여 디자인을 제작하였습니다.</p>
+            </div><!-- title end -->
+            
+            <div class="list">
+                <a href="iimg/ra.jpg." data-fancybox="images">
+                    <img src="img/ra.jpg" alt=" " />
+                    
+                    <div class="info">
+                        <h4>라벤더 공원</h4>
+                        <p>포토샵</p>
+                    </div><!-- info end -->
+                </a><!-- 1 -->
+                <a href="img/ja.jpg" data-fancybox="images">
+                    <img src="img/ja.jpg" alt=" " />
+                    
+                    <div class="info">
+                        <h4>전골 맛집</h4>
+                        <p>포토샵</p>
+                    </div><!-- info end -->
+                </a><!-- 2 -->
+                <a href="img/ha.jpg" data-fancybox="images">
+                    <img src="img/ha.jpg" alt=" " />
+                    
+                    <div class="info">
+                        <h4>화와이 항공여행권</h4>
+                        <p>포토샵</p>
+                    </div><!-- info end -->
+                </a><!-- 3 -->
+                <a href="img/du.jpg" data-fancybox="images">
+                    <img src="img/du.jpg" alt=" " />
+                    
+                    <div class="info">
+                        <h4>두바이 여행</h4>
+                        <p>포토샵</p>
+                    </div><!-- info end -->
+                </a><!-- 5 -->
+                <a href="img/pen.jpg" data-fancybox="images">
+                    <img src="img/pen.jpg" alt=" " />
+                    
+                    <div class="info">
+                        <h4>플라워 피크닉</h4>
+                        <p>포토샵</p>
+                    </div><!-- info end -->
+                </a><!-- 6 -->
+            </div><!-- list end -->
+
+        </div><!-- inner  end-->
+    </section><!-- cont04 end -->
+    <section class="cont04">
+        <div class="inner">
+            <div class="title">
+                <h3>그래픽디자인</h3>
+                <p>2D, 3D그래픽을 포토샵, 일러스트레이터를 이용하여 디자인을 제작하였습니다.</p>
+            </div><!-- title end -->
+            
+            <div class="list">
+                <a href="img/KakaoTalk_20220913_094428877_03.jpg" data-fancybox="images">
+                    <img src="img/KakaoTalk_20220913_094428877_03.jpg" alt=" " />
+                    
+                    <div class="info">
+                        <h4>그래픽디자인 제목</h4>
+                        <p>사용한 프로그램</p>
+                    </div><!-- info end -->
+                </a><!-- 1 -->
+                <a href="img/KakaoTalk_20220913_094443119.jpg" data-fancybox="images">
+                    <img src="img/KakaoTalk_20220913_094443119.jpg" alt=" " />
+                    
+                    <div class="info">
+                        <h4>그래픽디자인 제목</h4>
+                        <p>사용한 프로그램</p>
+                    </div><!-- info end -->
+                </a><!-- 2 -->
+                <a href="img/KakaoTalk_20220914_112524199.jpg" data-fancybox="images">
+                    <img src="img/KakaoTalk_20220914_112524199.jpg" alt=" " />
+                    
+                    <div class="info">
+                        <h4>그래픽디자인 제목</h4>
+                        <p>사용한 프로그램</p>
+                    </div><!-- info end -->
+                </a><!-- 3 -->
+                <a href="img/mongolia.jpg" data-fancybox="images">
+                    <img src="img/mongolia.jpg" alt=" " />
+                    
+                    <div class="info">
+                        <h4>그래픽디자인 제목</h4>
+                        <p>사용한 프로그램</p>
+                    </div><!-- info end -->
+                </a><!-- 5 -->
+                <a href="img/KakaoTalk_20220914_112524199_02.jpg" data-fancybox="images">
+                    <img src="img/KakaoTalk_20220914_112524199_02.jpg" alt=" " />
+                    
+                    <div class="info">
+                        <h4>그래픽디자인 제목</h4>
+                        <p>사용한 프로그램</p>
+                    </div><!-- info end -->
+                </a><!-- 6 -->
+            </div><!-- list end -->
+
+        </div><!-- inner  end-->
+    </section><!-- cont04 end -->
+
+    <section class="cont05">
+        <div class="inner">
+            <div class="title">
+                <h3>나의소개</h3>
+                <p>나의경력, 이력, 스킬을 공유합니다.</p>
+            </div><!-- title end -->
+            <div class="info">
+                <div class="info_img">
+                    <img src="img/cont03_2.jpg" alt="" />
+                </div><!-- info_img end -->
+                <div class="text">
+                    <ul> 
+                        <li><strong>이름</strong></li>
+                        <li>최유리</li>
+                    </ul>
+                    <ul> 
+                        <li><strong>연럭처</strong></li>
+                        <li>010-6822-9720</li>
+                    </ul>
+                    <ul> 
+                        <li><strong>생년월일</strong></li>
+                        <li>1997.02.25</li>
+                    </ul><ul> 
+                        <li><strong>카카오톡아이디</strong></li>
+                        <li>dbfl9720</li>
+                    </ul>
+                    <ul> 
+                        <li><strong>경력</strong></li>
+                        <li>어디에서 무엇을 하였는가?<br/>어디에서 무엇을 하였는가?</li>
+                    </ul><!-- 있으면 쓰고 없으면 안쓰면됨  -->
+                    <ul> 
+                        <li><strong>교육</strong></li>
+                        <li>[멀티미디어콘텐츠제작]스마트-영상편집&웹<br/>(프리미어, 에펙, 시네마4D)</li>
+                    </ul>
+                    <ul class="list">
+                        <li>#웹제작</li>
+                        <li class="v">#영상편집</li>
+                        <li>#html</li>
+                        <li>#css</li>
+                        <li>#포토샵</li>
+                        <li>#일러스트</li>
+                        <li>#클립스튜디오</li> 
+                        <li class="v">#프리미어프로</li>
+                        <li class="v">#에프터이펙트</li>
+                        <li class="v">#4D</li>
+                       
+                    </ul>
+                </div><!-- text end -->
+            </div><!-- info end -->
+        </div><!-- inner end -->
+    </section><!-- cont05 end -->
+
+    <footer>
+        <ul>
+            <li><a href="#"> 유튜브체널 이동</a></li>
+            <li><a href="#" download>지원서 다운로드</a></li>
+        </ul>
+        <P>COPYRIGHT 2022. 디자이너 최유리 ALL RIGHTS RESERVED.</P>
+        <P>본 사이트는 개인 포트폴리오로 제작이되어 상옵족 목적이 아닙니다.<br/>사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힙니다.</P>
+    </footer>
 </body>
 </html>
