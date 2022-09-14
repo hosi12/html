@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+@import url( http://fonts.googleapis.com/earlyaccess/notosanskr.css); /*노토산스*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit; /*부모가 가진 생상을 상속 받는거*/
+}
+body {
+    line-height: 1;
+    color: #333;
+    font-family: 'Noto Sans KR';
+    font-weight: 400; /*위에 폰트 가져온거*/
+}
+
+/* 관람 요금 */
+
+.inner_time {
+    width: 1920px;
+    height: 1181px;  
+}
+.inner_time .title_v1 {
+    height: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 54px;
+    color: #004e70;
+    margin-top: 55px;
+}
+
+.inner_time .title01 {
+    width: 1480px;
+    height: 227px;
+    background-color: #f8e57f;
+    margin: 0 auto;
+}
+.inner_time .title01 .list01 {
+    width: 1480px;
+    height: 60px;
+    background-color: #004e70; 
+    
+}
+.inner_time .title01 .list01 .item01{
+    text-align: center; 
+}
+.inner_time .title01 .list01 .item01  ul{
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.inner_time .title_v2 {
+    height: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 54px;
+    color: #004e70;
+    margin-top: 55px;
+}
+
+
+/* 무민 굿즈 */
+.shop {
+    width: 1920px;
+    height: 1385px;
+}
+.shop .gift  {
+    height: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 54px;
+    color: #004e70;
+    
+}
+
+.shop .gift h1 {
+    margin-bottom: 200px;
+}
+.shop .do {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.shop .do .item5 {
+    height: 640px;
+    text-align: center;
+}
+.shop .do .item5 img {
+    margin-bottom: 26px;
+}
+.shop .do .item5_2 {
+    height: 640px;
+    text-align: center;
+}
+.shop .do .item5_2 img {
+    margin-bottom: 26px;
+}
+.shop .do .item5 div  {
+    font-size: 26px;
+    color: #004e70;
+    
+}
+.shop .do .item5_2 div {
+    font-size: 26px;
+    color: #004e70;
+    
+}
+.shop .do .item5 p {
+    margin-top: 24px;
+}
+.shop .do .item5_2 p {
+    margin-top: 24px;
+}
+
+
+
+
+
+/* 카페 */
+
+.moomin_cafe {
+    width: 1920px;
+    height: 1024px;
+    background-color: #f8e57f;
+}
+.moomin_cafe .list {
+    height: 179px;
+    width: 1480px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.moomin_cafe .list h1 {
+    
+    color: #ffae00;
+    font-size: 53px;
+    
+}
+.moomin_cafe .box {
+    width: 1480px;
+    height: 687px;
+    background-color: #ffae00;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.moomin_cafe .box .item6 img {
+    margin-bottom: 50px;
+}
+.moomin_cafe .box .item6 strong {
+    margin-bottom: 46px;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.moomin_cafe .box .item6 p {
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* 오시는 길 */
+
+.map {
+    width: 1920px;
+    height: 890px;
+    background-color: #64d5e2;
+}
+.map .map_box {
+    
+    width: 1480px;
+    margin: 0 0 0 178px;
+}
+.map .map_box .map_m {
+    font-size: 53px;
+    
+}
+.map .map_box .map_m h4{
+    padding: 77px 0 0 63px;;
+}
+ .map_m {
+    display: block;
+    color: #fff;
+}
+.con {
+    margin-top: 283px;
+    justify-content: space-between;
+    align-items: flex-end;
+    display: flex;
+}
+.con .co1 {
+    margin-left: 30px;
+    width: 159px;
+    height: 225px;
+    transform: scaleX(-1);
+}
+.con .co2 {
+    width: 435px;
+    height: 502px;
+    transform: scaleX(-1);
+    margin-right: -23px;
+}
+.con2 {
+    width: 1480px;
+    margin-inline: 855px;
+    margin-top: -673px;
+}
+.con2 .item7 {
+    color: #fff;
+}
+.con2 .item7 strong {
+    margin-bottom: 17px;
+    display: block;
+    font-size: 25px;
+}
+.con2 .item7 p {
+    margin-bottom: 34px;
+    font-size: 20px;
+}
+.moo_map {
+    max-width: 100px;
+    margin: -399px 240px;
+    box-sizing : content-box;
+}
+
+
+/* 무민에 대해서 더알아볼까? */
+.tobe_yanson {
+    width: 1920px;
+    height: 932px;
+    background-color: #85f4d6;
+}
+.tobe_yanson .yanson {
+    margin: 41px  801px;
+    width: 358px;
+    height: 75px;
+    background-color: #f8e57f;
+    color: #fff;
+    font-size: 31px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+
+/*footer*/
+footer {
+    width: 1920px;
+    height: 460px;
+    background-color: #004e70;
+}
+.footer{
+    display: block;
+    color: #fff;
+   font-size: 20px;
+   
+    
+}
+.footer .cont01 {
+    width: 1480px;
+    margin: -90px auto 0;
+}
+.footer .cont01 .mo {
+    padding: 100px 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 89px;
+    text-align: center;
+}
+
+/* 밈블 */
+.footer .cont01 .mo .mim {
+    width: 189px;
+    height: 226px;
+}
+
+.footer .cont01 .mo .mim .mim2 {
+    width: 100%;
+}
+.footer .cont01 .mo .mim .mim2 img {
+    width: 100%;
+    object-fit: cover;
+}
+/*  글자 */
+.footer .cont01 .mo ul {
+margin-top: 46px;
+
+}
+.footer .cont01 .mo li{
+    margin-bottom: 8px;
+   
+}
+
+.footer .cont01 .mo .FOLLOW_MOOMIN img {
+    width: 49px;
+    height: 48px;
+    
+}
+.footer .cont01 .mo .FOLLOW_MOOMIN div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 41px 41px ;
+}
