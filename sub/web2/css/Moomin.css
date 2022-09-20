@@ -152,7 +152,8 @@ header .m004e70 .m004e70_2 ul{
 }
 .inner_time .itemc0 .item02 {
     height: 143px;
-   /*  background-color: #f8e57f; */
+    /* background-color: #f8e57f; */
+    border-right: thick solid #004F70;
 }
 .inner_time .itemc0 .item02 .c1 {
   /*   background-color: aqua; */
@@ -381,9 +382,10 @@ header .m004e70 .m004e70_2 ul{
     width: 1920px;
     height: 890px;
     background-color: #64d5e2;
+    position: relative;
 }
 .map .map_box {
-    
+    position: relative;
     width: 1480px;
     margin: 0 0 0 178px;
 }
@@ -417,9 +419,9 @@ header .m004e70 .m004e70_2 ul{
     margin-right: -23px;
 }
 .con2 {
-    width: 1480px;
-    margin-inline: 855px;
-    margin-top: -673px;
+    position: absolute;
+    right: 178px;
+    top: 295px;
 }
 .con2 .item7 {
     color: #fff;
@@ -434,8 +436,10 @@ header .m004e70 .m004e70_2 ul{
     font-size: 20px;
 }
 .moo_map {
-    max-width: 100px;
-    margin: -399px 240px;
+    margin: 200px 0;
+    position: absolute;
+    top: -31px;
+    left: 200px;
     box-sizing : content-box;
 }
 .moo_map iframe {
