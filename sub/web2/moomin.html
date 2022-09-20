@@ -8,6 +8,54 @@
     <!-- 스타일 css -->
     <link href="css/Moomin.css" rel="stylesheet" />
 
+
+     <!-- link Swiper  -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+ <!-- fancybox css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <link href="css/main.css" rel="stylesheet" />
+ <link href="css/font.css" rel="stylesheet" />
+ 
+ <!-- jquery -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ <!--fancybox -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+
+ <script>
+    $(function(){
+        //영상편집 슬라이드
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+
+        //영상편집 탭메뉴
+        $('.motion_menu ul li').click(function(){
+            $('.motion_menu ul li').removeClass('on');
+            $(this).addClass('on');/* 작성 순서 중요 요렇게 작성해야함 안그러면 그냥 사라짐 */
+
+            $('.mySwiper').removeClass('on');
+            $('.mySwiper').eq($(this).index()).addClass('on');
+        });
+    });//jquery end
+</script>
+
+
+
 </head>
 <body>
     <header>
@@ -16,8 +64,8 @@
                 <a href="#"><img src="img/brand_logo.png" alt="무민제주"></a>
             </h1>
        </div> <!-- white end -->
-       <div class="004e70">
-            <nav>
+       <div class="m004e70">
+            <div class="m004e70_2">
                 <ul>
                     <li><a href="#">MOOMIN is</a></li>
                     <li><a href="#">MOOMIN LAND  JEJU</a></li>
@@ -25,7 +73,7 @@
                     <li><a href="#">이용안내 </a></li>
                     <li><a href="#">고객센터</a></li>
                 </ul>
-            </nav>
+            </div><!-- m004e70_2 -->
        </div><!-- 004e70 end -->
     </header>
 
@@ -35,19 +83,109 @@
             <div class="main_v">
                 <img src="img/mv02.jpg" alt="" />
             </div><!-- 1 -->
-          
-            <div class="main_v">
-                <img src="img/mv01.jpg" alt="" />
-            </div><!-- 2 -->
-           
         
         </div><!-- main end -->
     </section>
 
+    
+   <!-- motion_menu 1 게임-->
+   <div class="swiper mySwiper on">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="item">
+            <!-- 유튜브 -->
+            <div class="pc_youtube">
+                <img src="img/main01.jpeg" alt=" 사진1" />
+                
+            </div><!-- pc_youtube end -->
+
+        </div><!-- item end -->
+      </div><!-- 1 -->
+      <div class="swiper-slide">
+        <div class="item">
+            <!-- 유튜브 -->
+            <div class="pc_youtube">
+                <img src="img/main02.jpg" alt=" 사진2" />
+                
+            </div><!-- pc_youtube end -->
+
+        </div><!-- item end -->
+      </div><!-- 2 -->
+      <div class="swiper-slide">
+        <div class="item">
+            <!-- 유튜브 -->
+            <div class="pc_youtube">
+                <img src="img/main03.jpg" alt=" 사진3" />
+                
+            </div><!-- pc_youtube end -->
+
+        </div><!-- item end -->
+      </div><!-- 3 -->
+      <div class="swiper-slide">
+        <div class="item">
+            <!-- 유튜브 -->
+            <div class="pc_youtube">
+                <img src="img/main04.jpg" alt=" 사진4" />
+                
+            </div><!-- pc_youtube end -->
+
+        </div><!-- item end -->
+      </div><!-- 4 -->
+      <div class="swiper-slide">
+        <div class="item">
+            <!-- 유튜브 -->
+            <div class="pc_youtube">
+                <img src="img/main05.jpg" alt=" 사진5" />
+                
+            </div><!-- pc_youtube end -->
+
+        </div><!-- item end -->
+      </div><!-- 5 -->
+      <div class="swiper-slide">
+        <div class="item">
+            <!-- 유튜브 -->
+            <div class="pc_youtube">
+                <img src="img/main06.jpg" alt=" 사진6" />
+                
+            </div><!-- pc_youtube end -->
+
+        </div><!-- item end -->
+      </div><!-- 6 -->
+      <div class="swiper-slide">
+        <div class="item">
+            <!-- 유튜브 -->
+            <div class="pc_youtube">
+                <img src="img/main07.jpg" alt=" 사진7" />
+                
+            </div><!-- pc_youtube end -->
+
+        </div><!-- item end -->
+      </div><!-- 7 -->
+      <div class="swiper-slide">
+        <div class="item">
+            <!-- 유튜브 -->
+            <div class="pc_youtube">
+                <img src="img/main08.jpg" alt=" 사진8" />
+                
+            </div><!-- pc_youtube end -->
+
+        </div><!-- item end -->
+      </div><!-- 8 -->
+      
+      
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div><!-- swiper end 1 -->
+
+    
     <section class="inner_time">
         <div class="title_v1">
             <h1>관람시간</h1>
         </div><!-- title_v1 end -->
+
         <div class="title01"><!-- tableWrap mt_15 무민홈페이지 이름 -->
 
             <div class="list01">
@@ -60,30 +198,46 @@
                         <li>비고</li>
                     </ul>
                 </div><!-- item01 end -->
-                <div class="item02">
-                    <ul>
-                       <li>전시관</li> 
-                       <li>10:00</li> 
-                       <li>19:00</li> 
+               
+                <div class="itemc0"> 
 
-                       <li>
-                            <p>연중 휴무</p>
-                            <p>전시관 입장 마감 18:00</p>
-                       </li>
-                    </ul>
-                    <ul>
-                        <li>상품숍</li>
-                        <li>10:00</li>
-                        <li>19:00</li>
-                    </ul>
-                </div><!-- item02 end -->
+                    <div class="item02">
+                        <ul class="c1">
+                            <li>전시관</li> 
+                            <li>10:00</li> 
+                            <li>19:00</li> 
+                        </ul>
+
+                        <ul class="c2">
+                            <li>상품숍</li>
+                            <li>10:00</li>
+                            <li>19:00</li>
+                        </ul>
+                    </div><!-- item02 end -->
+
+                    <div class="item03"> 
+                        <ul>
+                            <li>연중 휴무</li>
+                            <li>전시관 입장 마감 18:00</li>
+                        </ul>
+
+                    </div><!-- item03 end -->
+                   
+
+                </div><!-- itemc0 -->
+               
             </div><!-- list01 end -->
-            <p><!-- t_noti mt_20 무민홈페이지 이름 -->
-                영업 시간은 기후상황 및 운영일정에 따라 변경될 수 있습니다.
-            </p>
-            <p><!-- t_noti mt_20 무민홈페이지 이름 -->
-                상품숍은 별도 이용 가능하며 마감시간 30분 전까지 입장하실 수 있습니다.
-            </p>
+
+            <div class="b1">
+                
+                 <p><!-- t_noti mt_20 무민홈페이지 이름 -->
+                    <span>●</span>영업 시간은 기후상황 및 운영일정에 따라 변경될 수 있습니다.
+                </p>
+                <p><!-- t_noti mt_20 무민홈페이지 이름 -->
+                    <span>●</span>상품숍은 별도 이용 가능하며 마감시간 30분 전까지 입장하실 수 있습니다.
+                </p>
+            </div>
+           
         </div><!-- title01 end -->
 
 
@@ -104,37 +258,42 @@
                         <li>소인 (만 36개월 이상~ 초등학생)</li>
                     </ul>
                 </div><!-- item03 emd -->
+                
+                <div class="itemc02">
+                    <div class="item04">
 
-                <div class="item04">
-                    <ul>
-                       <li>일반</li> 
-                       <li>15,000 원</li> 
-                       <li>14,000 원</li> 
-                       <li>12,000 원</li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <p>제주도민</p>
-                            <P>경로 우대</P>
-                            <p>국가유공자</p>
-                            <p>장애인</p>
-                        </li>
-                        <li>11,000 원</li>
-                        <li>10,000 원</li>
-                        <li>8,000 원</li>
-                    </ul>
-                </div><!-- item04 end -->
-                <div class="btn">
+                        <ul class="c3">
+                            <li>일반</li> 
+                            <li>15,000 원</li> 
+                            <li>14,000 원</li> 
+                            <li>12,000 원</li>
+                        </ul>
+
+                        <ul class="c4">
+                            <li>제주도민<br/> 경로 우대<br/>국가유공자<br/>장애인</li>
+                            <li>11,000 원</li>
+                            <li>11,000 원</li>
+                            <li>8,000 원</li>
+                        </ul>
+
+                    </div><!-- item04 end -->
+
+                </div><!-- itemc02 end -->
+                <div class="b2"> 
+                    <div class="btn">
+                        <p><span>●</span>만 36개월 미만 무료 입장</p>
+                        <p><span>●</span>경로 우대는 만 65세 이상</p>
+                        <p><span>●</span>증빙 서류 필수 지참</p>
+                    </div><!-- btn end -->  
                     
-                    <p>만 36개월 미만 무료 입장</p>
-                    <p>경로 우대는 만 65세 이상</p>
-                    <p>증빙 서류 필수 지참</p>
                     <div class="btnWrap">
-                        <a href="https://booking.naver.com/booking/5/bizes/408401?area=bnr" target="new">
-                            <span>티켓구매 바로하기</span>
-                        </a>
-                    </div><!-- btnWrap end -->
-                </div><!-- btn end --> 
+                            <a href="https://booking.naver.com/booking/5/bizes/408401?area=bnr" target="new">
+                                <span>티켓구매 바로하기</span>
+                            </a>
+                        </div><!-- btnWrap end -->
+
+                </div>
+               
 
 
             </div><!-- list02 end -->
@@ -239,15 +398,7 @@
     </section><!-- moomin_cafe end -->
 
     <section class="map"> 
-        
-            
-       
-        
         <div class="map_box">
-            
-            
-           
-            
             <div class="map_m">
                 <h4>오시는 길</h4>
             </div><!-- map_m end -->
@@ -279,11 +430,8 @@
             </div><!-- item7 3 end  -->
 
             </div>
-            
-            
-
-            
         </div><!-- map box end -->
+        
         <div class="moo_map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3334.465124075649!2d126.37953475113503!3d33.30665358072123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350c5b3376321f41%3A0x53efaff1e2e3da9c!2z7KCc7KO866y066-8656c65Oc!5e0!3m2!1sko!2skr!4v1662612710288!5m2!1sko!2skr" width="730" height="532" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div><!-- moo_map end -->
