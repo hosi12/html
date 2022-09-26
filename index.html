@@ -14,44 +14,32 @@
    
     <link href="css/yuri.css" rel="stylesheet" />
     <link href="css/font.css" rel="stylesheet" />
+
+     <!-- aos css -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- js -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- 4. jquery ui lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 <!-- fancybox css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <!--fancybox -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+<script src="js/java.js"></script>
 
-    <script>
-        $(function(){
-            //영상편집 슬라이드
-            var swiper = new Swiper(".mySwiper", {
-                pagination: {
-                el: ".swiper-pagination",
-                type: "fraction",
-                },
-                navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-                },
-            });
-
-            //영상편집 탭메뉴
-            $('.motion_menu ul li').click(function(){
-                $('.motion_menu ul li').removeClass('on');
-                $(this).addClass('on');/* 작성 순서 중요 요렇게 작성해야함 안그러면 그냥 사라짐 */
-
-                $('.mySwiper').removeClass('on');
-                $('.mySwiper').eq($(this).index()).addClass('on');
-            });
-        });//jquery end
-
-        
-    </script>
+    
    
 </head>
 <body>
@@ -60,7 +48,7 @@
             <h1>
                 <a href="#">cheoyuri</a>
             </h1>
-            <nav>
+            <nav class="gnb">
                 <ul>
                     <li><a href="#">나의소개</a></li>
                     <li><a href="#">영상편집</a></li>
@@ -70,7 +58,7 @@
             </nav> 
         </div><!-- inner end -->
     </header>
-    <section class="main_visual">
+    <div class="main_visual">
         
         <!-- 이미지 영상비디오 배경 컬러 넣을수 있음 -->
         <img src="img/p001.png" alt="" />
@@ -78,10 +66,11 @@
             <p>motion graphic deisnger</p>
             <h2>cheo yu ri <br/></be>Deisnger</h2>
         </div><!-- inner end -->
-    </section><!-- main_visual end -->
+    </div><!-- main_visual end -->
 
-    <section class="cont05">
-            <div class="inner">
+    <section class="cont05" >
+            <div class="inner"data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" >
                 <div class="title">
                     <h3>나의소개</h3>
                   
@@ -170,7 +159,8 @@
         </section><!-- cont05 end -->
 
     <section class="cont01">
-        <div class="inner">
+        <div class="inner" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
             <div class="title">
                 <h3>영상편집</h3>
               
@@ -179,7 +169,7 @@
                 <ul>
                     <li class="on">게임</li>
                     <li>홍보영상</li>
-                    <li>인포그레픽</li>
+                    <li>인포그래픽</li>
                     <li>브이로그</li>
                     <li>뮤비티저</li>
                 </ul>
@@ -390,26 +380,28 @@
     </section><!-- cont01 end -->
 
     <section class="cont03">
-        <div class="title inner">
+        <div class="title inner" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
             <h3>웹디자인</h3>
             <p>접근성 호환성을 고려한 웹사이트 리뉴얼</p>
         </div> <!-- title end -->
 
-        <div class="list inner">
-            <div class="m3">
+        <div class="list inner" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+            <div class="m3" data-aos="fade-right">
                 <img src="img/p03.png" alt="" />
                 
             </div>
-            <div class="m2">
+            <div class="m2"data-aos="fade-left">
                 <img src="img/p04.png" alt="" />
             </div>
-            <div class="item"><!-- 1 -->
+            <div class="item"  data-aos="fade-right"><!-- 1 -->
                 <img src="img/art-01.gif" alt="창조의아침 " />
                 <div class="info">
                     <h4>창조의아침 웹사이트 리뉴얼</h4>
-                    <p>창조의아침 웝사이트 리뉴얼을 위해 기획, 디자인, HTML,CSS언어를 활용하여 웹사이트를 구연하였습니다.</p>
+                    <p>창조의아침 웹사이트 리뉴얼을 위해 기획, 디자인, HTML,CSS언어를 활용하여 웹사이트를 구연하였습니다.</p>
                      <ul class="text">
-                        <li><strong>프로그렘</strong> : 포토샵, 일러스트, Vsode</li>
+                        <li><strong>프로그램</strong> : 포토샵, 일러스트, Vsode</li>
                         <li><strong>사용언어</strong> : html, css</li>
                         <li><strong>제작일자</strong> : 2022.08</li>
                      </ul><!-- text end  -->
@@ -423,14 +415,14 @@
                 
             </div> <!-- item end 1 -->
 
-            <div class="item"><!-- 2 -->
+            <div class="item" data-aos="fade-left"><!-- 2 -->
                 
                 <img src="sub/web2/img/main04.jpg" alt="웹사이트 이름 " />
                 <div class="info">
                     <h4>무민랜드 제주 웹사이트 리뉴얼</h4>
-                    <p>이름 웝사이트 리뉴얼을 위해 기획, 디자인, HTML,CSS언어를 활용하여 웹사이트를 구연하였습니다.</p>
+                    <p>이름 웹사이트 리뉴얼을 위해 기획, 디자인, HTML,CSS언어를 활용하여 웹사이트를 구연하였습니다.</p>
                      <ul class="text">
-                        <li><strong>프로그렘</strong> : 포토샵, 일러스트, Vsode</li>
+                        <li><strong>프로그램</strong> : 포토샵, 일러스트, Vsode</li>
                         <li><strong>사용언어</strong> : html, css</li>
                         <li><strong>제작일자</strong> : 2022.09</li>
                      </ul><!-- text end  -->
@@ -449,10 +441,11 @@
     </section><!--cont03 end  -->
 
     <section class="cont04">
-        <div class="inner">
+        <div class="inner" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
             <div class="title">
                 <h3>그래픽디자인</h3>
-                <p>2D, 3D그래픽을 포토샵, 일러스트레이터를 이용하여 디자인을 제작하였습니다.</p>
+                <p>2D & 3D그래픽을 포토샵, 일러스트레이터를 이용하여 디자인을 제작하였습니다.</p>
             </div><!-- title end -->
             
             <div class="list01">
@@ -476,7 +469,7 @@
                     <img src="img/ha.jpg" alt=" " />
                     
                     <div class="info">
-                        <h4>화와이 항공여행권</h4>
+                        <h4>하와이 항공여행권</h4>
                         <p>포토샵</p>
                     </div><!-- info end -->
                 </a><!-- 3 -->
@@ -546,11 +539,14 @@
 
     <footer>
         <ul>
-            <li><a href="#"> 유튜브체널 이동</a></li>
+            <li><a href="#"> 유튜브채널 이동</a></li>
             <li><a href="#" download>지원서 다운로드</a></li>
         </ul>
         <P>COPYRIGHT 2022. 디자이너 최유리 ALL RIGHTS RESERVED.</P>
-        <P>본 사이트는 개인 포트폴리오로 제작이되어 상옵족 목적이 아닙니다.<br/>사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힙니다.</P>
+        <P>본 사이트는 개인 포트폴리오로 제작이되어 상업적 목적이 아닙니다.<br/>사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힙니다.</P>
     </footer>
 </body>
+<script>
+    AOS.init();
+  </script>
 </html>
