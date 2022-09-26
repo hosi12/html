@@ -543,7 +543,7 @@ footer ul {
 }
 footer ul li {
     height: 50px;
-    line-height: 50px;
+    line-height: 42px;
     width: 200px;
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     color: #1b2e4b;

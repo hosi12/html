@@ -40,7 +40,15 @@ section .title p {
 }
 
 /* header */
-header {}
+header {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
 header .inner {
     height: 100px;
     display: flex;
@@ -325,7 +333,7 @@ header .inner  nav ul li a {
 
 /* cont04 그래픽디자인 */
 .cont04 {
-    background-color: #de83ff;
+    background-color: #5a5a5a;
     color: #fff;
     padding: 200px 0;
 }
@@ -360,6 +368,7 @@ header .inner  nav ul li a {
 /* cont05 나의소개 */
 .cont05 {
     padding: 200px 0;
+    background-color: #;
 }
 .cont05 .info {
     display: flex;
