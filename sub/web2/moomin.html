@@ -8,6 +8,11 @@
     <!-- 스타일 css -->
     <link href="css/Moomin.css" rel="stylesheet" />
 
+     <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
      <!-- link Swiper  -->
      <link
@@ -182,11 +187,11 @@
 
     
     <section class="inner_time">
-        <div class="title_v1">
+        <div class="title_v1" data-aos="fade-up">
             <h1>관람시간</h1>
         </div><!-- title_v1 end -->
 
-        <div class="title01"><!-- tableWrap mt_15 무민홈페이지 이름 -->
+        <div class="title01" data-aos="fade-up"><!-- tableWrap mt_15 무민홈페이지 이름 -->
 
             <div class="list01">
                 
@@ -241,13 +246,13 @@
         </div><!-- title01 end -->
 
 
-        <div class="title_v2">
+        <div class="title_v2 "data-aos="fade-up">
             <h1>
                 <span>이용요금</span>
             </h1>
         </div><!-- title_v2 end -->
 
-        <div class="title02"><!-- tableWrap mt_15 무민홈페이지 이름 -->
+        <div class="title02" data-aos="fade-up"><!-- tableWrap mt_15 무민홈페이지 이름 -->
 
             <div class="list02"> 
                 <div class="item03">
@@ -304,10 +309,10 @@
 
     <section class="shop">
 
-        <div class="gift">
+        <div class="gift" data-aos="fade-up">
             <h1>MOOMIN  GIFT SHOP</h1>
         </div><!-- gift -->
-        <div class="do">
+        <div class="do" data-aos="fade-up">
             <div class="item5">
                         <img src="img/shop01.png" alt="" />
                         <div>
@@ -355,13 +360,13 @@
 
     </section><!-- shop end -->
 
-    <section class="moomin_cafe">
+    <section class="moomin_cafe" data-aos="fade-up">
         
-        <div class="list">
+        <div class="list" data-aos="fade-up">
                 <h1>MOOMIN CAFE</h1>
             </div><!-- list end -->
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
         
             
             <div class="item6">
@@ -397,9 +402,9 @@
         </div><!-- box end -->
     </section><!-- moomin_cafe end -->
 
-    <section class="map"> 
+    <section class="map" data-aos="fade-up"> 
         <div class="map_box">
-            <div class="map_m">
+            <div class="map_m" data-aos="fade-up">
                 <h4>오시는 길</h4>
             </div><!-- map_m end -->
 
@@ -413,7 +418,7 @@
                 </div>
             </div>
             
-            <div class="con2">
+            <div class="con2" data-aos="fade-left" >
                 <div class="item7">
                 <strong>[도로명 신주소]</strong>
                 <p>제주특별자치도 서귀포시 안덕면 병악로 420</p>
@@ -432,13 +437,13 @@
             </div>
         </div><!-- map box end -->
         
-        <div class="moo_map">
+        <div class="moo_map" data-aos="fade-right">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3334.465124075649!2d126.37953475113503!3d33.30665358072123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350c5b3376321f41%3A0x53efaff1e2e3da9c!2z7KCc7KO866y066-8656c65Oc!5e0!3m2!1sko!2skr!4v1662612710288!5m2!1sko!2skr" width="730" height="532" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div><!-- moo_map end -->
     </section><!-- map end -->
 
     <section class="tobe_yanson">
-        <div class="tobe">
+        <div class="tobe" data-aos="flip-up">
             <img src="img/img_about_moomins.svg" alt="토베얀손" />
         </div><!-- tobe end -->
         <div class="yanson">
@@ -517,4 +522,7 @@
 
     
 </body>
+<script>
+    AOS.init();
+  </script>
 </html>
