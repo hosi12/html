@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>창조의아침</title>
     <link href="art/mama.css" rel="stylesheet" />
+
+       <!-- aos css -->
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       <!-- js -->
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 <body>
     <header>
@@ -37,10 +43,10 @@
 
     <section class="cont01">
         <div class="bb">
-            <div class="title">
+            <div class="title" >
                 <h3>학생들의 연구 우수작을 확인 해보세요.</h3>
             </div><!-- title end -->
-            <div class="list">
+            <div class="list"  data-aos="fade-up">
                 <div class="item">
                     <img src="img/art02.jpg" alt="" />
                     <div>
@@ -87,7 +93,7 @@
         </div>
     </section>
 
-    <section class="cont02">
+    <section class="cont02"  data-aos="fade-up">
         <div class="na">
         <h4> 입시 기획영상</h4>  
             <div class="youtube_att">
@@ -99,7 +105,7 @@
     </section><!-- cont02 end -->
     
     <section class="cont03">
-        <div class="people">
+        <div class="people" data-aos="flip-up">
             <div class="hugi">
                 <img src="img/people1.gif" alt="사람 후기 1번" />
                 <p>그림을 배우면서 자신감이 많이 <br>
@@ -128,7 +134,7 @@
 
         </div><!-- people end -->
 
-        <div class="people2">
+        <div class="people2" data-aos="flip-up">
             <div class="hugi">
                     <img src="img/people4.gif" alt="사람 후기 4번" />
                     <p>시간 안에 그림 한 장을 끝내는 <br>
@@ -157,7 +163,8 @@
     </section>
   
 
-    <section class="google_map">
+    <section class="google_map" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
         <div class="font01">
             <div>
                 <h4>오시는 길.</h4>
@@ -173,4 +180,7 @@
             Copyright ⓒ 창조의아침 ALL RIGHTS RESERVED. Powered by midaeipsi.com</p>
     </footer>
 </body>
+<script>
+    AOS.init();
+  </script>
 </html>
