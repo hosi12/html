@@ -545,7 +545,7 @@ footer ul li {
     height: 50px;
     line-height: 42px;
     width: 200px;
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgb(250, 231, 124) 100%);
     color: #1b2e4b;
     margin: 10px auto;
     border-radius: 10px;
@@ -563,3 +563,35 @@ footer p {
     color: rgba(255, 255, 255, 0.801);
     line-height: 1.4;
 }
+
+
+.btn-hover {
+    /* width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none; */
+    background-size: 300% 100%;
+
+    
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #d2a1ff, #ff9670, #ffe180 , #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 204, 116, 0.75);
